@@ -1,1 +1,33 @@
 /*  your css code here. If applicable */
+#scrollingText {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: scrollLeft 10s linear infinite;
+}
+
+div.blog-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+div.blog-item img {
+  height: 200px;
+}
+
+div.blog-item h2 {
+  margin-top: 10px;
+}
+
+div.blog-item p {
+  margin-top: 5px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
